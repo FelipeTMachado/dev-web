@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhamento do Produto</title>
+    <link rel="stylesheet" href="styledetalhamento.css">
+</head>
+<body>
+    <div class="cabecalho">
+        <div class="cabecalho-esquerdo">
+            <img src="https://static.nike.com.br/v10-397-0/images/brands/logo.svg" alt="">
+        </div>
+
+        <div class="cabecalho-direito">
+            
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <div id="imagem">
+            <img src="https://imgnike-a.akamaihd.net/768x768/02261982.jpg" alt="">
+        </div>
+
+        <div class="detalhamento">
+            <p id="descricao">Produto de teste</p>
+            <p id="valor">R$ 26,00</p>
+        </div>
+    </div>
+
+    <div class="rodape">
+
+    </div>
+
+    <script>
+        const images = [
+            'https://imgnike-a.akamaihd.net/768x768/02261982.jpg',
+            'https://imgnike-a.akamaihd.net/768x768/027918ID.jpg',
+            'https://imgnike-a.akamaihd.net/768x768/01495051.jpg',
+            'https://imgnike-a.akamaihd.net/768x768/02265451.jpg',
+            'https://imgnike-a.akamaihd.net/360x360/011580ID.jpg',
+            'https://imgnike-a.akamaihd.net/360x360/02765115.jpg',
+            'https://imgnike-a.akamaihd.net/360x360/02780351.jpg',
+            'https://imgnike-a.akamaihd.net/360x360/028495P1.jpg',
+            'https://imgnike-a.akamaihd.net/360x360/027645P1.jpg',
+            'https://imgnike-a.akamaihd.net/360x360/02927215.jpg'
+        ];
+
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        const index = getQueryParameter('index');
+
+        if (index !== null) {
+            const produtoDetalhes  = document.getElementById('imagem');
+            const produtoDescricao = document.getElementById('descricao');
+            const produtoValor     = document.getElementById('valor'); 
+
+            if (index == 0) {
+                produtoDescricao.innerHTML = '<p>Tenis Nike Color Jebs</p>';
+                produtoValor.innerHTML     = '<p>R$ 200,00</p>';
+            }
+
+            
+            if (index == 1) {
+                produtoDescricao.innerHTML = '<p>Tenis Nike SB Black Squat<p>';
+                produtoValor.innerHTML     = '<p>R$ 230,00</p>';
+            }
+
+            if (index == 2) {
+                produtoDescricao.innerHTML = '<p>Tenis Nike SB White Squat<p>'
+                produtoValor.innerHTML     = '<p>R$ 400,00</p>';
+            }
+
+            if (index == 3) {
+                produtoDescricao.innerHTML = '<p>Tenis Color Nike Will<p>'
+                    produtoValor.innerHTML     = '<p>R$ 349,90</p>';
+            }
+
+            if (index == 4) {
+                produtoDescricao.innerHTML = '<p>Tenis Nike SB White Squat<p>';
+                produtoValor.innerHTML     = '<p>R$ 240,00</p>';
+            }
+
+            if (index == 5) {
+                produtoDescricao.innerHTML = '<p>Tenis Nike Felps ColorMate<p>';
+                produtoValor.innerHTML     = '<p>R$ 140,00</p>';
+            }
+
+            if (index == 6) {
+                produtoDescricao.innerHTML = '<p>Tenis Will SB Wareves<p>';
+                produtoValor.innerHTML     = '<p>R$ 500,00</p>';
+            }
+
+            if (index == 7) {
+                produtoDescricao.innerHTML = '<p>Tenis CA JomWalker<p>';
+                produtoValor.innerHTML     = '<p>R$ 239,00</p>';
+            }
+
+            if (index == 8) {
+                produtoDescricao.innerHTML = '<p>Tenis Basic WaterColler<p>';
+                produtoValor.innerHTML     = '<p>R$ 100,00</p>';
+            }
+
+            if (index == 9) {
+                produtoDescricao.innerHTML = '<p>Tenis SB Jebb<p>';
+                produtoValor.innerHTML     = '<p>R$ 80,00</p>';
+            }
+
+            const imgUrl = images[index];
+            produtoDetalhes.innerHTML = `<img src="${images[index]}" alt="Produto ${index}">`;
+        }
+    </script>
+</body>
+</html>

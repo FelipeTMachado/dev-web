@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (orientation: landscape) {
+    .cabecalho {
+        height: 6vh;
+        background: blue;
+    
+        display: flex;
+    }
+
+    .cabecalho-direito {
+        padding-top: 2vh;
+        height: 6vh;
+        width: 50vw;
+        background-color: white;
+        align-self: right;
+    }
+
+    .cabecalho-esquerdo {
+        padding-top: 2vh;
+        height: 6vh;
+        width: 50vw;
+        background-color: white;
+        align-self: left;
+        display: flex;
+        justify-content: left;
+        text-align: center;
+    }
+
+    .cabecalho-esquerdo img {
+        height: 4vh;
+    }
+
+    .conteudo {
+        display: flex;
+
+        height: 100vh;
+        background: white;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #imagem {
+        align-self: left;
+        margin-left: 20vh;
+    }
+
+    .detalhamento {
+        margin-left: 5vh;
+        align-self: right;
+        margin-top: 50vh;
+        height: 96vh;
+        width: 25vw;
+
+        background-color: white;
+
+        /* display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    img {
+        height: 40vh;
+        width: 21vw;
+    }
+
+    
+
+    #descricao {
+        font-size: 2vw;
+    }
+
+    #valor {
+        font-size: 1.2vw;
+    }
+}
+
+
+@media screen and (orientation: portrait) {
+    .cabecalho {
+        height: 6vh;
+        background: white;
+    
+        display: flex;
+    }
+
+    .cabecalho-direito {
+        padding-top: 2vh;
+        height: 6vh;
+        width: 50vw;
+        background-color: white;
+        align-self: right;
+    }
+
+    .cabecalho-esquerdo {
+        /* padding-left: 2vh; */
+        padding-top: 2vh;
+        height: 6vh;
+        width: 30vw;
+        background-color: white;
+        align-self: left;
+        display: flex;
+        justify-content: left;
+        text-align: center;
+    }
+
+    .cabecalho-esquerdo img {
+        height: 4vh;
+    }
+
+    .conteudo {
+        display: flex;
+
+        height: 50vh;
+        background: white;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #imagem {
+        align-self: left;
+        margin-left: 1vh;
+    }
+
+    .detalhamento {
+        margin-left: 5vh;
+        align-self: right;
+        margin-top: 9vh;
+        height: 30vh;
+        width: 20vw;
+
+        background-color: white;
+
+        /* display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    img {
+        height: 25vh;
+        width: 50vw;
+    }
+
+    
+
+    #descricao {
+        font-size: 4vw;
+    }
+
+    #valor {
+        font-size: 5vw;
+    }
+}

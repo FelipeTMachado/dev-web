@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* CODIGO QUE FUNCIONA NO COMPUTADOR */
+@media screen and (orientation: landscape) {
+    .cabecalho {
+        height: 6vh;
+        background: blue;
+
+        display: flex;
+    }
+
+    .cabecalho-direito {
+        padding-top: 2vh;
+        height: 6vh;
+        width: 50vw;
+        background-color: white;
+        align-self: right;
+    }
+
+    .cabecalho-esquerdo {
+        padding-left: 2vh;
+        padding-top: 2vh;
+        height: 6vh;
+        width: 50vw;
+        background-color: white;
+        align-self: left;
+        display: flex;
+        justify-content: left;
+        text-align: center;
+    }
+
+    .cabecalho-esquerdo img {
+        height: 4vh;
+    }
+
+    .carousel {
+        /* background-color: black; */
+        margin-top: 12vh;
+        height: 40vh;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #botao-esquerdo {
+        width: 0; 
+        height: 0; 
+        border-top: 4vh solid transparent;
+        border-bottom: 4vh solid transparent; 
+        border-right:3vh solid #ABA8B2;
+        cursor: pointer;
+    }
+
+    #container-corousel {
+        margin-left: 2vh;
+        margin-right: 2vh;
+        height: 40vh;
+        width: 40vh;
+        border-radius: 1vh;
+        /* background: gray; */
+        /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5); */
+    }
+
+    #botao-direito {
+        width: 0; 
+        height: 0; 
+        border-top: 4vh solid transparent;
+        border-bottom: 4vh solid transparent; 
+        border-left:3vh solid #ABA8B2;
+        cursor: pointer;
+    }
+
+    #botao-direito:hover {
+        border-left: 3vh solid #87868a;
+    }
+
+    #botao-esquerdo:hover {
+        border-right: 3vh solid #87868a;
+    }
+
+    #botao-direito:active {
+        border-left: 3vh solid #8e71e6;
+    }
+
+    #botao-esquerdo:active {
+        border-right: 3vh solid #8e71e6;
+    }
+
+    .cat {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .catalogo {
+        background-color: white;
+        padding-top: 10vh;
+        width: 70vw;
+        text-align: center;
+    }
+
+    .catalogo .div-imagem {
+        margin: 3vh;
+        display: inline-block;
+        text-align: left;
+        width: 30vh;
+        height: 30vh;
+        background-color: white;
+        border-radius: 1vh;
+    }
+}
+
+
+/* CODIGO QUE FUNCIONA NO CELULAR */
+@media screen and (orientation: portrait) {
+    .cabecalho {
+        height: 6vh;
+        background: blue;
+
+        display: flex;
+    }
+
+    .cabecalho-direito {
+        padding-left: 2vh;
+        padding-top: 2vh;
+        height: 5vh;
+        width: 50vw;
+        background-color: white;
+        align-self: right;
+    }
+
+    .cabecalho-esquerdo {
+        padding-left: 2vh;
+        padding-top: 2vh;
+        height: 5vh;
+        width: 50vw;
+        background-color: white;
+        align-self: left;
+    }
+
+    .carousel {
+        height: 40vh;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #botao-esquerdo {
+        width: 0; 
+        height: 0; 
+        border-top: 4vh solid transparent;
+        border-bottom: 4vh solid transparent; 
+        border-right:3vh solid #ABA8B2;
+    }
+
+    #container-corousel {
+        margin-left: 2vh;
+        margin-right: 2vh;
+        height: 30vh;
+        width: 30vh;
+        border-radius: 1vh;
+        background: gray;
+        /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5); */
+    }
+
+    #botao-direito {
+        width: 0; 
+        height: 0; 
+        border-top: 4vh solid transparent;
+        border-bottom: 4vh solid transparent; 
+        border-left:3vh solid #ABA8B2;
+    }
+
+
+    #botao-direito:hover {
+        border-left: 3vh solid #87868a;
+    }
+
+    #botao-esquerdo:hover {
+        border-right: 3vh solid #87868a;
+    }
+
+    #botao-direito:active {
+        border-left: 3vh solid #8e71e6;
+    }
+
+    #botao-esquerdo:active {
+        border-right: 3vh solid #8e71e6;
+    }
+
+
+    .catalogo {
+        background-color: white;
+        padding-top: 10vh;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .catalogo div {
+        display: inline-block;
+        text-align: left;
+        width: 18vh;
+        height: 18vh;
+        background-color: green;
+        margin-bottom: 5vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+        border-radius: 1vh;
+    }
+}
